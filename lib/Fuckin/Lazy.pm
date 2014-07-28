@@ -6,7 +6,7 @@ use Data::Dumper;
 use base 'Exporter';
 use Carp qw/croak/;
 
-our $VERSION = "0.000001";
+our $VERSION = "0.000002";
 our @EXPORT = ('LAZY');
 
 sub produce_data {
@@ -69,7 +69,7 @@ Fuckin::Lazy - Lazy way to produce test structures (Or a very bad idea)
 
 Warning! Using the module would fall squarely into B<BAD PRACTICE>. You should
 predict what structures your code produces and put them into the test yourself.
-Simply sumping a result and testing against it is a bad idea. The only
+Simply dumping a result and testing against it is a bad idea. The only
 exception to this policy is when writing tests to make sure the output does not
 change from what it currently is.
 
@@ -141,6 +141,8 @@ exported. The C<'> can be used in place of C<::> due to legacy perl support.
 =head1 IDEA
 
 Thanks to Joshua Keroes for proposing the idea.
+
+C<"Fucking::Lazy is beautifully horrible"> - mst
 
 =head1 COPYRIGHT
 
